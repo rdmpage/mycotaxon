@@ -156,7 +156,7 @@ foreach ($files as $filename)
 					$reference->date = $date;
 				}
 				
-				if (preg_match('/(?<title><b>(Author [I|i]ndex|Content|Errata|Erratum|Index|Instructions to authors|Journal Publication Statement|Nomenclatural novelties|Notice|Ownership Statement|Publication [D|d]ate|Publication [D|d]ates? [F|f]or Mycotaxon|Reviewers)\.?<\/b>.*)\s+Pages?/u', $tr->outertext, $m))
+				if (preg_match('/(?<title><b>(Advertisement|An apology|Announcements|Author [I|i]ndex|Index to fungous and lichen taxa|Content|Errata|Errata and Addenda|Erratum|Guidelines for reviewers|Index|Index to fungous and lichen taxa|Instructions to [A|a]uthors|Instructions to authors (revised October 2000)|Instructions to authors and author\'s checklist|Journal Publication Statements?|Missing|Mycotaxon|Nomenclatural novelties|Nomenclatural novelties proposed in volume seventy-two|Nomenclatural novelties proposed in Mycotaxon volume 89|Notices?|Ownership Statement|Publication [D|d]ate|Preface|Publication [D|d]ates? [F|f]or Mycotaxon|Remembering the morel grower: Ron Ower, 1939-1986|Reviewers|Statement [O|o]f [O|o]wnership|Table of Contents)\.?<\/b>.*)\s+Pages?/u', $tr->outertext, $m))
 				{
 					$reference->title = $m['title'];					
 				}
