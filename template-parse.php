@@ -45,10 +45,12 @@ $keys = array(
 $files = scandir($basedir);
 
 // debugging
+/*
 $files=array('0073.html');
 $files=array('0100.html');
 $files=array('0120.html');
 $files=array('0001.html');
+*/
 
 foreach ($files as $filename)
 {
@@ -215,6 +217,12 @@ foreach ($files as $filename)
 				{
 					$go = false;
 				}
+				
+				if (!isset($reference->title))
+				{
+					$go = false;
+				}
+				
 					
 				//$go = false;
 				
